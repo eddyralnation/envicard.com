@@ -1,0 +1,166 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+body
+{
+	background: url(bg.jpg);
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	overflow-x: hidden;
+}
+h4
+{
+	font-weight: 600;
+	font-size: 1.1em;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	top: 5%;
+	left: 3%;
+	position: absolute;
+	opacity: 90%;
+
+}
+h5
+{
+	font-weight: 600;
+	font-size: 1.2em;
+	writing-mode: vertical-rl;
+	bottom: 20px;
+	position: absolute;
+	left: 90%;
+	overflow: hidden;
+	opacity: 90%;
+}
+
+.content .gojo img 
+{
+	width: 150px;
+	position: absolute;
+	margin-top: 20px;
+	transform: translateX(-70px);
+	opacity: 80%;
+	border-radius: 30px;
+}
+.content{
+	background: aliceblue;
+	border-radius: 20px;
+	height: 450px;
+	width: 350px;
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translateY(100px);
+	animation: bg infinite 5s ease-in-out;
+}
+@keyframes bg{
+	0%,100%{
+		background: beige;
+	}
+	33%
+	{
+		background: aliceblue;
+	}
+	66%
+	{
+		background: lightgray;
+	}
+}
+.content h1 
+{
+	margin-top: 20px;
+	font-size: 1.5em;
+	font-family: 'Candara';
+	opacity: 90%;
+}
+.content h1 p 
+{
+	opacity: 80%;
+	color: #333;
+	font-size: 0.6em;
+}
+h2
+{
+	font-family: 'Candara';
+	font-size: 1.3em;
+	opacity: 80%;
+	margin-top: 60%;
+	text-transform: uppercase;
+}
+li a 
+{
+	text-decoration: none;
+	color:#000;
+	opacity: 85%;
+	transition: 0.4s;
+	display: inline-flex;
+	justify-content: space-between;
+	gap: 20px;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+li a img
+{
+	display: inline-flex;
+	justify-content: space-between;
+	animation: animate 2s infinite ease-in-out;
+}
+@keyframes animate
+{
+	0%,100%{
+		transform: scale(1);
+	}
+	50%
+	{
+		transform: scale(1.1);
+	}
+}
+.line 
+{
+	height: 2px;
+	width: 70px;
+	transform: translateX(140px);
+	border-radius: 20px;
+	background: #333;
+	opacity: 80%;
+	display: block;
+}
+.content li 
+{
+	list-style: none;
+	margin-top: 20px;
+}
+.content li a:hover
+{
+	color: red;
+}
+.yt
+{
+	width: 30px;
+
+}
+.fi 
+{
+	width: 50px;
+	height: 20px;
+}
+.in
+{
+	width: 30px;
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+	.content  
+	{
+		transform: translateY(150px);
+	}
+}
+
